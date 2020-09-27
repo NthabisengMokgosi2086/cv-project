@@ -1,0 +1,21 @@
+
+  
+  
+  body{
+     background-image: url("g_pic.gif");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size:cover;
+      opacity: 1;
+      height: 500px;
+      width: 500px;
+  }
+  
+  .a:hover{
+    background-color:palevioletred;
+  }
+  .a:active{
+    background-color: palevioletred;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px)
+  }

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="P_1.CSS">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>First_page</title>
+    <style>
+        canvas {
+                top:20%;
+                left:10%;
+                position: absolute;
+                color:darkgray;
+                font-family: Impact, Charcoal, sans-serif;
+            
+        }
+        a{
+                position: absolute;
+                bottom:40%;
+                right: 60%;
+                width: 500;
+                height: 400;
+                font-size: xxx-large;
+                color:white;
+                box-shadow: 0 9px #999;
+                border-radius: 10px;
+                
+                cursor: pointer;
+                text-align: center;
+                padding: 15px 25px;
+        }
+        .a:hover{
+            background-color:palevioletred;
+        }
+        .a:active{
+            
+        box-shadow: 0 5px #666;
+        transform: translateY(4px)
+        }
+    </style>
+</head>
+<body>
+    <script src="db_Con.js"></script>
+
+    <canvas id="myCanvas" width="1200" height="150" ;">
+        </canvas>
+        
+        <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        
+        
+
+        ctx.font = "30px Verdana";
+        // Create gradient
+
+        var gradient = ctx.createLinearGradient(0, 0, c.width, 0);
+        gradient.addColorStop("0.9", "magenta");
+        gradient.addColorStop("0.5", "yellow");
+        gradient.addColorStop("0.7", "aqua");
+        gradient.addColorStop("0.6", "orange");
+
+
+        // Fill with gradient
+        ctx.strokeStyle = gradient;
+        ctx.strokeText("Hello I'm Nthabiseng Mokgosi a Front-end designer and Programmer.", 90, 130);
+
+        </script>
+        
+
+    
+    
+    <div class ="w3-container">
+
+        <a style="font-size: xxx-large;" href= "http://127.0.0.1:5500/v2_cv.html" class="w3-button  w3-palevioletred w3-border  w3-border-aqua w3-round-xxlarge  ">About Me</a>
+    </div>
+    
+</body>
+</html>
