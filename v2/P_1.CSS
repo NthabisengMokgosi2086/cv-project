@@ -1,0 +1,129 @@
+
+  /*Master styles*/
+  body{
+    margin: 0px; /* removes a margin at the top*/
+    background-image: url("g_pic.gif");
+    font-family: Arial, Helvetica, sans-serif;
+   
+  }
+  
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  .column {
+    float:center;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+    
+  }
+  
+  
+
+.card {
+  box-shadow: 0 4px 8px 0 lightskyblue;
+
+padding :40px;
+}
+  
+  .about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+  }
+  
+  .container2 {
+    padding: 40px;
+    
+  }
+  
+  
+  
+  .title {
+    color: white;
+  }
+  
+  
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+  
+  /*align items using grids*/
+  .container{
+    display: grid;
+    grid-template-columns: 1fr;/*1% fractional units to create a clounm layout cant be seen*/
+    
+  }
+ 
+  /*Nav style*/
+  .nav-wrapper{
+    display:flex ;/*moved the name to the right*/
+    justify-content: space-between;/*moved the name to the Far right corner*/
+    padding: 20px;/*moved everything away from its origin pos inside*/
+    background-color:lightblue;
+  }
+  .left-side{
+    display: flex;/*Displays the links next to each othert*/
+  
+  }
+  .nav-wrapper>.left-side > div{   /*go to the left side and grab all the divs inside and style them */
+            
+            margin-right: 20px;
+            font-size: 0.9em;  /*90%*/
+            text-transform:uppercase ;/*Convert to uppercases*/
+  }
+
+  .nav-link-wrapper{
+    height:22px;
+    border-bottom: 1px solid transparent;/*wont be seen*/
+    transition: border-bottom 0.5s; /*animate the border*/
+  }
+  .nav-link-wrapper a{ /* in the nav link we are grabbing the a link to add styles*/
+    color: darkblue;
+    text-decoration: none;
+    transition: color 0.5s;/*animate the border and text color*/
+  }
+
+  .nav-link-wrapper:hover{
+    border-bottom: 1px solid darkred;
+
+  }
+
+  .nav-link-wrapper a:hover{
+    color:darkred;
+    
+    
+  }
+   /* <canvas id="myCanvas" width="1200" height="150" ;>
+        </canvas>
+        
+        <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        
+        
+
+        ctx.font = "30px Verdana";
+        // Create gradient
+
+        var gradient = ctx.createLinearGradient(0, 0, c.width, 0);
+        gradient.addColorStop("0.9", "magenta");
+        gradient.addColorStop("0.5", "yellow");
+        gradient.addColorStop("0.7", "aqua");
+        gradient.addColorStop("0.6", "orange");
+
+
+        // Fill with gradient
+        ctx.strokeStyle = gradient;
+        ctx.strokeText("Hello I'm Nthabiseng Mokgosi a Front-end designer and Programmer.", 90, 130);
+
+        </script>//*/
+        
+  
