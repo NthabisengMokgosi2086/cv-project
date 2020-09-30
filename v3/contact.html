@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ,user-scalable=yes">
+    <link rel="stylesheet" href="stylecontact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Contact_Page</title>
+    <script src="cv.js"></script>
+   
+</head>
+<body>
+    <div class="Contact-Section">
+        <h1>Contact N Mokgosi</h1>
+        <div class="border"></div>
+            <form  onsubmit="return false " class ="C-form" action ="contact.html" method="post">
+            <input type="text" class="C-form-text" placeholder="Enter Your First Name " id ="firstName">
+            <input type="text" class="C-form-text" placeholder="Enter Your Last Name " id ="lastName">
+            <input type="email" class="C-form-text" placeholder="Enter Your Email " id="email">
+            <input type="text" class="C-form-text" placeholder="Enter Your Phone Number " id="phone">
+            <textarea class="C-form-text" placeholder="Enter your Comment"  id="comment"  ></textarea>
+            <button type="submit" class="C-form-text-btn" onclick="sendContact()" >Send </button>
+               
+            
+        </form>
+
+            <a style="color: aqua"  href="http://127.0.0.1:5500/index.html"> <br>Home</a>
+    </div>
+    
+
+    
+</body>
+</html>

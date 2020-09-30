@@ -1,0 +1,336 @@
+
+/* Center website */
+.main {
+  max-width: 500px;
+  margin: auto;
+  
+  column-count:1;
+
+}
+
+
+.iframe-container{
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+}  
+.iframe-container iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+}
+  
+  
+  
+  /*align items using grids*/
+  .container{
+    display: grid;
+    grid-template-columns: 1fr;/*1% fractional units to create a clounm layout cant be seen*/
+    
+  }
+ 
+  /*Nav style*/
+  .nav-wrapper{
+    display:flex ;/*moved the name to the right*/
+    justify-content: space-between;/*moved the name to the Far right corner*/
+    padding: 20px;/*moved everything away from its origin pos inside*/
+    background-color:lightblue;
+  }
+  .left-side{
+    display: flex;/*Displays the links next to each othert*/
+  
+  }
+  .nav-wrapper>.left-side > div{   /*go to the left side and grab all the divs inside and style them */
+            
+            margin-right: 20px;
+            font-size: 0.9em;  /*90%*/
+            text-transform:uppercase ;/*Convert to uppercases*/
+  }
+
+  .nav-link-wrapper{
+    height:22px;
+    border-bottom: 1px solid transparent;/*wont be seen*/
+    transition: border-bottom 0.5s; /*animate the border*/
+  }
+  .nav-link-wrapper a{ /* in the nav link we are grabbing the a link to add styles*/
+    color: darkblue;
+    text-decoration: none;
+    transition: color 0.5s;/*animate the border and text color*/
+  }
+
+  .nav-link-wrapper:hover{
+    border-bottom: 1px solid darkred;
+
+  }
+
+  .nav-link-wrapper a:hover{
+    color:darkred;
+    
+    
+  }
+
+ 
+
+img{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 50%;
+    padding :10px;
+    border:1px solid #ddd;
+    opacity: 5;
+    width: 300;
+    height: 200;
+
+    
+
+}
+
+.Name{
+  color:blue;
+}
+a:link{
+
+  color:blue;
+
+}
+a:active{
+  color:red;
+}
+
+
+img:hover{
+    box-shadow: 0 0 2px 1px rgba (0,100,150,0.5);
+    transform: scaleX(-1);
+}
+* {
+
+    
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    max-width: 500px;
+    margin: auto;
+    padding: 0 15px;
+   
+   
+    
+  }
+  
+  body {
+    
+    padding: 20px;
+    font-family: Arial;
+    background-image: url("n_pic.jpg");
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	   -moz-box-sizing: border-box; /* Firefox, other Gecko */
+      box-sizing: border-box; 
+      background-position: center;
+    position: relative;
+    
+  }
+  
+  
+  h1 {
+    font-size: 50px;
+    word-break: break-all;
+  }
+  
+  .row{
+    margin: 10px -16px;
+  }
+  
+  .row::after{
+    content: "";
+    clear: both;
+    display: table;
+
+  }
+  .content {
+    background-color: lightblue;
+    padding: 30px;
+    border-width: 100px ;
+  }
+ 
+  .content :hover {
+    background: rgb(27, 112, 108);
+  }
+
+/*Percentage progress*/
+
+
+
+
+.skills {
+  text-align: left; /* Right-align text */
+  padding-top: 5px; /* Add top padding */
+  padding-bottom: 5px; /* Add bottom padding */
+  margin: 40px auto;
+}
+.skills p{
+
+  margin: 30px;
+  color: black;
+  text-align: right;
+}
+
+.p_bar{
+       height: 15px;
+       display: block;
+       border-radius: 8px;
+       overflow: hidden;
+       box-shadow: white;
+       background: black;         
+}
+
+.p_bar span{
+
+      height: 20px;
+      float: right;
+      background: white;
+
+}
+.html {
+   width: 90%;
+   animation: html 40s;
+  
+  } 
+.css {
+   width: 80%;
+   animation: css 40s;
+  } 
+.js {
+    width: 50%;
+   animation: js 40s;
+  } 
+.python {
+    width: 60%; 
+    animation: python 40s;
+  } 
+  .json {
+    width: 40%; 
+    animation: json 40s;
+  } 
+  .c_sharp {
+    width: 90%; 
+    animation: c_sharp 40s;
+    
+  } 
+  .c_plus {
+    width: 75%;
+    animation: c_plus 40s;
+  } 
+  .java {
+    width: 70%; 
+    animation: java 40s;
+  }     
+  @keyframes html{
+    0%{
+      width: 0;
+    }
+    100%{
+      width: 90;
+    }
+  }
+   
+  @keyframes css{
+    0%{
+      width: 0;
+    }
+    100%{
+      width: 80;
+    }
+  }
+
+  @keyframes js{
+    0%{
+      width: 0;
+    }
+    100%{
+      width: 50;
+    }
+  }
+
+  @keyframes python{
+    0%{
+      width: 0;
+    }
+    100%{
+      width: 60;
+    }
+  }
+
+  @keyframes json{
+    0%{
+      width: 0;
+    }
+    100%{
+      width: 40;
+    }
+  }
+
+  @keyframes c_sharp{
+    0%{
+      width: 0;
+    }
+    100%{
+      width: 90;
+    }
+  }
+
+  @keyframes c_plus{
+    0%{
+      width: 0;
+    }
+    100%{
+      width: 75;
+    }
+  }
+
+  @keyframes java{
+    0%{
+      width: 0;
+    }
+    100%{
+      width: 70;
+    }
+  }
+  
+
+ /* .weatherbox {
+    width: 200px;
+    height: 20px;
+    background: #b4ecff;
+    border-radius: 8px;
+    display: table;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+    overflow:hidden;
+    padding: 0 0 10px 0;
+  }
+  strong,
+  span {
+    width: 100%;
+    display: inline-block;
+    padding: 10px 0;
+    margin: 0;
+  }
+  p {
+    padding: 0;
+    margin: 0
+  }
+  strong {
+    background: #00769d;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  */
+  
+
+
+

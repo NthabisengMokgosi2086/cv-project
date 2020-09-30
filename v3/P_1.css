@@ -1,0 +1,151 @@
+.all{
+  background-image: Url("n_pic.jpg") no-repeat center;
+    
+  max-width: 500px;
+    margin: auto;
+    padding: 0 15px;
+    overflow: hidden;
+}
+  /*Master styles*/
+  .body{
+   box-sizing: border-box; 
+    font-family: Arial, Helvetica, sans-serif;
+    
+  }
+  
+
+  
+  
+  .Text{
+      
+       width: 800px;
+       height: 200px;
+       position: absolute;
+       margin: 20%  30%;
+       text-align: center;
+      
+     
+
+  }
+  .Text h1{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: aquamarine;
+    font-size: 30px ;
+  }
+
+.Text a{
+  border: 1px solid aquamarine;
+  font-size: 15px;
+  text-transform: uppercase;
+  margin:20px;
+  text-decoration: none;
+  padding: 10px 25px;
+  display: inline;
+  color: aliceblue;
+
+}
+.Text a:hover{
+
+  background: rgb(27, 112, 108);
+  color: #333;
+}
+
+
+  .column {
+    float:center;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+    
+  }
+  
+  
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+  
+  /*align items using grids*/
+  .container{
+    display: grid;
+    grid-template-columns: 1fr;/*1% fractional units to create a clounm layout cant be seen*/
+
+    
+  }
+ 
+  /*Nav style*/
+  .nav-wrapper{
+    display:flex ;/*moved the name to the right*/
+    justify-content: space-between;/*moved the name to the Far right corner*/
+    padding: 20px;/*moved everything away from its origin pos inside*/
+    background-color:lightseagreen;
+  }
+  .left-side{
+    display: flex;/*Displays the links next to each othert*/
+  
+  }
+  .nav-wrapper>.left-side > div{   /*go to the left side and grab all the divs inside and style them */
+            
+            margin-right: 20px;
+            font-size: 0.9em;  /*90%*/
+            text-transform:uppercase ;/*Convert to uppercases*/
+  }
+
+  .nav-link-wrapper{
+    height:22px;
+    border-bottom: 1px solid transparent;/*wont be seen*/
+    transition: border-bottom 0.5s; /*animate the border*/
+  }
+  .nav-link-wrapper a{ /* in the nav link we are grabbing the a link to add styles*/
+    color: darkblue;
+    text-decoration: none;
+    transition: color 0.5s;/*animate the border and text color*/
+  }
+
+  .nav-link-wrapper:hover{
+    border-bottom: 1px solid white;
+
+  }
+
+  .nav-link-wrapper a:hover{
+    color: white;
+    
+    
+  }
+  .Name{
+    color: purple;
+  }
+   /* <canvas id="myCanvas" width="1200" height="150" ;>
+        </canvas>
+        
+        <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        
+        
+
+        ctx.font = "30px Verdana";
+        // Create gradient
+
+        var gradient = ctx.createLinearGradient(0, 0, c.width, 0);
+        gradient.addColorStop("0.9", "magenta");
+        gradient.addColorStop("0.5", "yellow");
+        gradient.addColorStop("0.7", "aqua");
+        gradient.addColorStop("0.6", "orange");
+
+
+        // Fill with gradient
+        ctx.strokeStyle = gradient;
+        ctx.strokeText("Hello I'm Nthabiseng Mokgosi a Front-end designer and Programmer.", 90, 130);
+
+        </script>//*/
+        
+  
