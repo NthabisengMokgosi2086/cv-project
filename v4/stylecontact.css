@@ -1,0 +1,91 @@
+*#Contact{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    height: auto;
+}
+.Contact-Section{
+    background: url("n_pic.jpg") no-repeat center;
+    padding: 25px 0;
+    background-size: cover;
+
+
+}
+.Contact-Section h1{
+     
+    text-align: center;
+    color:aquamarine;
+
+}
+.border{
+    width: 50px;
+    height: 5px;
+    background: aquamarine;
+    margin: 40px auto;
+}
+
+.C-form{
+
+    max-width: 500px;
+    margin: auto;
+    padding: 0 15px;
+    overflow: hidden;
+}
+.C-form-text{
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    margin: 20px 0;
+    background: #111;
+    padding: 30px 50px;
+    outline: none;
+    color: yellow;
+    transition: 0.5s;
+}
+
+.C-form-text:focus{
+       
+    box-shadow: 0 0 15px 5px aquamarine;
+}
+
+textarea.C-form-text{
+    resize: none;
+    height: 150px;
+
+
+}
+
+.C-form-text-btn{
+    float: left;
+    border:0;
+    background:aquamarine ;
+    color: blue;
+    padding: 15px 60px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition:0.5s ;
+
+}
+.C-form-text-btn:hover{
+  background: rgb(27, 112, 108)
+
+}
+.C-form-text a{
+    border: 1px solid aquamarine;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin:20px;
+    text-decoration: none;
+    padding: 10px 25px;
+    display: inline;
+    color: aliceblue;
+}  
+ .C-form-text a:hover{
+
+    background: rgb(27, 112, 108);
+    color: #333;
+  }
+
+  .placeholderRed{
+      color: orange;
+  }

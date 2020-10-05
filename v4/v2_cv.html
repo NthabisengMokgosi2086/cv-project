@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styleCv.CSS">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
+    <title>CV_Page</title>
+   
+  
+
+    
+
+    
+    <style>
+        h1{
+                font-weight: bolder;
+                text-align: center;
+                color:darkblue;
+
+
+        }
+        p{
+            
+            font-weight: bold;
+            scroll-padding-inline:center;
+        
+            color: red;
+            
+            
+
+        }
+        h2{
+            
+            top:30%;
+            right:20%;
+            font-weight: bolder;
+            color:darkblue;
+        }
+        
+        a{
+         font: bolder;
+         }
+         canvas{
+             text-align: center;
+         }
+        
+        
+
+</style>
+</head>
+<body>
+
+
+    
+    <script src="cv.js"></script>
+    <div class ="container">
+        <div class="nav-wrapper">
+
+            <div class="left-side">
+                <div class ="nav-link-wrapper">
+
+                  <a   href= "http://127.0.0.1:5500/v3/index.html" > <i  class="fa fa-home"  > Home </i></a>
+                  <a   href= "http://127.0.0.1:5500/v3/contact.html" > <i class="fa fa-phone "> Contact</i> </a>
+
+                </div>
+
+               
+            </div>
+
+            <div class="right-side">
+                    <div class="Name">
+                        <div > Nthabiseng Mokgosi</div>
+                    </div>
+            </div>
+      </div>
+    </div>
+     
+    
+     
+
+     
+    <canvas id="myCanvas" width="1200" height=180 ;> </canvas>
+    
+    
+    
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+        
+        
+
+        ctx.font = "35px Verdana";
+        // Create gradient
+
+        var gradient = ctx.createLinearGradient(0, 0, c.width, 0);
+        gradient.addColorStop("0", "magenta");
+        gradient.addColorStop("0.3", "aqua");
+       
+        gradient.addColorStop("1.0", "yellow");
+
+
+        // Fill with gradient
+        ctx.strokeStyle = gradient;
+        
+        ctx.strokeText("Welcome to  Nthabiseng Mokgosi's Curriculum Vitae Website", 120, 120);
+       
+      
+       
+        </script>
+        
+    
+        <div  class="main">
+
+        
+        
+        
+             <img src = "Seng.jpg" alt = "Pic_Nthabi">
+
+                
+                       <div class="row">
+                        <div class="content">
+                                <img src="pd_pic.jpg" alt="Personal Details" style="width:100%">
+                                <h2>Personal Details</h2>
+                                <p> Name : Nthabiseng Mokgosi<br>
+                                    Birthday:24.05.2000<br>
+									Age:</label> 20<br>
+                                    City : Vereeninging, Gauteng <br>
+                                    Phone Number : 068 063 0435 <br>
+                                    Email:<a href="Nthabisengmokgosi51@gmail.com">Nthabisengmokgosi51@gmail.com</a><br>
+                                    Interests: Art , Drawing<br>
+                                    Study: North-West University Vaal-Campus<br>
+									Degree: BSC INFORMATION TECHNOLOGY<br>
+                                    Race : African <br>
+                                </p>
+                        </div> 
+                       </div>
+                            
+                        
+                        
+                        <div class="row">
+                            <div class="content">
+                                <img src="e_pic.jpg" alt="Education" style="width:100%">
+                                <h2> Education </h2>
+                            <p >High School : Bachelor Degree <br>
+                                University : Information Technology Bachelors Degree
+                            </p>
+                            </div>
+                        </div>
+                            
+                        
+
+                        <div class="row">
+                            <div class="content">
+                                <img src="c_pic.jpg" alt="Certificates" style="width:100%">
+                                <h2>Certificates</h2>
+                            <p>1.Matric Certificate.<br>
+                                2. Golden Key Certificate.
+                            </p>
+                            </div>
+                        </div>
+                        
+
+                        <div class="row">
+                            <div class="content">
+                                <img src="ss_pic.jpg" alt="Skills" style="width:100%">
+                                <h2 >Skills </h2>
+                                <p >1. Windows Office<br>
+                                    2.Coding<br>
+                                    3.Business Analyst<br>
+                                    4.Business Management<br>
+                                    5.Commmunication
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                                 <div class="content">
+                                        <img src="st_pic.jpg" alt="Software Technologies" style="width:100%">
+                                        <h2>Technologies i have used</h2>
+                                
+                                        <div class="skills">
+                                        
+                                            <p>C#</p>
+                                            <span class="p_bar"><span class="c_sharp">90%</span></span>
+                    
+                    
+                                            <p>Java</p>
+                                            <span class="p_bar"><span class="java">70%</span></span>
+                    
+                                            <p>C++</p>
+                                            <span class="p_bar"><span class="c_plus">75%</span></span>
+                    
+                                            <p>HTML</p>
+                                            <span class="p_bar"><span class="html">90%</span></span>
+                                    
+                                            <p>CSS</p>
+                                            <span class="p_bar"><span class="css"> 80%</span></span>
+                                            
+                                            
+                                            <p>Node</p>
+                                            <span  class="p_bar"><span class="js">50%</span></span>
+                                            
+                                            
+                                            <p>Python</p>  
+                                            <span class="p_bar"><span class="python">60%</span></span>
+                    
+                                            <p>Json</p>
+                                            <span class="p_bar"><span class="json">40%</span></span>
+                                      </div>
+                                 </div>       
+                            
+                    
+                        </div>
+
+
+                        
+                        <div class="row">
+                            <div class="content">
+                                <img src="sa_pic.jpg" alt="My Accounts" style="width:100%">
+                                <h2>Accounts</h2>
+
+                                <a href ="https://m.facebook.com/nthabiseng.mokgosi"   class="fa fa-facebook" ></a>
+                                
+                                <a href = "https://m.instagram.com/nthabisengmokgosi51" class="fa fa-instagram"></a>
+                                
+                                <a href="https://github.com/NthabisengMokgosi2086"  class="fa fa-github" ></a>
+
+
+
+</div>
+                                
+                            </div>
+                        </div>
+
+
+                        
+         </div>
+               
+        
+
+
+        
+          
+
+
+
+      
+               
+</body>
+</html>
