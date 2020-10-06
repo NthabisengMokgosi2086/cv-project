@@ -1,0 +1,589 @@
+
+  body{
+        margin:0;
+        max-width:100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        display: block;
+       
+        
+  } 
+  html{
+    box-sizing: border-box;
+  }
+
+  *,*:before,*:after{
+    box-sizing: inherit;
+  }
+
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+ 
+   section{
+     display: block;
+   }
+  /*Home styles*/
+  .home{
+    background-image: Url("n_pic.jpg") ;
+    color:rgb(14, 150, 66);
+    box-sizing: border-box; 
+    font-family: Arial, Helvetica, sans-serif;
+    
+   
+    padding: 0 10px;
+    position: initial;
+    height:calc(100vh + 35px) ;
+    
+    display:block;
+  }
+  
+
+  
+  
+  .Text{
+      
+       max-width: auto;
+       height: 200px;
+       position: initial;
+       margin: 20% ;   
+       animation-duration: 3s;
+       animation-name: bounceIn;
+       padding: 30px;
+        
+     
+
+  }
+
+  @keyframes bounceIn{
+    0%{
+         transform: scale(0.1);
+         
+         opacity: 0;
+    }
+    25%{
+        transform: scale(1.4);
+        opacity: 2;
+    }
+    50%{
+        transform: scale(1);
+        
+    }
+  }  
+  .Text h1{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: aquamarine;
+    font-size: 30px ;
+    
+    
+    
+    
+    
+  }
+
+
+/*align items using grids*/
+.container{
+  display: grid;
+  grid-template-columns: 1fr;/*1% fractional units to create a clounm layout cant be seen*/
+ 
+  
+}
+
+/*Nav style*/
+.nav-wrapper{
+  display:flex ;/*moved the name to the right*/
+  justify-content: space-between;/*moved the name to the Far right corner*/
+  padding: 20px;/*moved everything away from its origin pos inside*/
+  background-color:lightseagreen;
+  position: fixed;
+  width: 100%;
+  
+}
+  
+  
+
+.left-side{
+  display: flex;/*Displays the links next to each othert*/
+  
+}
+.nav-wrapper>.left-side > div{   /*go to the left side and grab all the divs inside and style them */
+          
+          margin-right: 20px;
+          font-size: 0.9em;  /*90%*/
+          text-transform:uppercase ;/*Convert to uppercases*/
+}
+
+.nav-link-wrapper{
+  height:22px;
+  border-bottom: 1px solid transparent;/*wont be seen*/
+  transition: border-bottom 0.5s; /*animate the border*/
+  position: fixed;
+}
+.nav-link-wrapper a{ /* in the nav link we are grabbing the a link to add styles*/
+  color: darkblue;
+  text-decoration: none;
+  transition: color 0.5s;/*animate the border and text color*/
+}
+
+.nav-link-wrapper:hover{
+  border-bottom: 1px solid white;
+
+}
+
+.nav-link-wrapper a:hover{
+  color: white;
+  
+  
+}
+.Name{
+  color: purple;
+}
+ 
+/*About*/
+
+.about{
+
+  background-color: rgb(27, 112, 108);
+  margin: 0;
+  display: block;
+}
+
+.col {
+  float:center;
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  
+}
+.card{
+  box-shadow:0 4px 8px 0 rgba(0, 0 ,0 0.2);
+  margin: 8px;
+}
+
+.contain::after, .row::after{
+  content: "";
+  clear: both;
+  display:table;
+
+}
+.title{
+  font-size: large;
+}
+
+aside{
+  width: 80%;
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 80px;
+  padding-left: 50px;
+  
+  float: right;
+  display: block;
+
+}
+   
+  /*cv*/
+
+ 
+ .cv{
+    
+
+
+    line-height: 11pt;
+    padding: 70px 0 70px 0;
+    position: fixed;
+    display: block;
+    -webkit-font-smoothing: antialiased;
+
+    background-image: url("n_pic.jpg");
+    
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    position: static;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    
+   
+    
+   
+    
+  }
+    /* Center website */
+  .main {
+   
+      max-width: 500px;
+      margin: auto;
+      padding: 0 15px;
+      overflow: hidden;
+   
+  }
+  
+  img{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 50%;
+    padding :10px;
+    border:1px solid #ddd;
+    opacity: 5;
+    height: 400px;
+    width: 260px;
+    
+  }
+a:link{
+
+  color:red;
+
+}
+a:active{
+  color:green;
+}
+
+
+img:hover{
+    box-shadow: 0 0 2px 1px rgba (0,100,150,0.5);
+    transform: scaleX(-1);
+}
+
+
+  h2 {
+    font-size: 50px;
+    text-align:center;
+    padding:20px;
+  }
+  
+  .row{
+    margin: 10px -16px;
+  }
+  
+  .row::after{
+    content: "";
+    clear: both;
+    display: table;
+
+  }
+  .content {
+    background-color:  rgb(27, 112, 108);
+    padding: 30px;
+    border-width: 100px ;
+  }
+  
+
+/*Percentage progress*/
+
+
+
+
+.skills {
+  text-align: left; /* Right-align text */
+  padding-top: 5px; /* Add top padding */
+  padding-bottom: 5px; /* Add bottom padding */
+  margin: 40px auto;
+}
+.skills p{
+
+  margin: 30px;
+  color: black;
+  text-align: right;
+}
+
+.p_bar{
+       height: 15px;
+       display: block;
+       border-radius: 8px;
+       overflow: hidden;
+       box-shadow: white;
+       background: black;         
+}
+
+.p_bar span{
+
+      height: 20px;
+      float: right;
+      background: white;
+
+}
+.html {
+   width: 90%;
+   animation: html 40s;
+  
+  } 
+.css {
+   width: 80%;
+   animation: css 40s;
+  } 
+.js {
+    width: 50%;
+   animation: js 40s;
+  } 
+.python {
+    width: 60%; 
+    animation: python 40s;
+  } 
+  .json {
+    width: 40%; 
+    animation: json 40s;
+  } 
+  .c_sharp {
+    width: 90%; 
+    animation: c_sharp 40s;
+    
+  } 
+  .c_plus {
+    width: 75%;
+    animation: c_plus 40s;
+  } 
+  .java {
+    width: 70%; 
+    animation: java 40s;
+  }     
+  @keyframes html{
+    0%{
+      width: 0;
+    }
+    100%{
+      width: 90;
+    }
+  }
+   
+  @keyframes css{
+    0%{
+      width: 0;
+    }
+    100%{
+      width: 80;
+    }
+  }
+
+  @keyframes js{
+    0%{
+      width: 0;
+    }
+    100%{
+      width: 50;
+    }
+  }
+
+  @keyframes python{
+    0%{
+      width: 0;
+    }
+    100%{
+      width: 60;
+    }
+  }
+
+  @keyframes json{
+    0%{
+      width: 0;
+    }
+    100%{
+      width: 40;
+    }
+  }
+
+  @keyframes c_sharp{
+    0%{
+      width: 0;
+    }
+    100%{
+      width: 90;
+    }
+  }
+
+  @keyframes c_plus{
+    0%{
+      width: 0;
+    }
+    100%{
+      width: 75;
+    }
+  }
+
+  @keyframes java{
+    0%{
+      width: 0;
+    }
+    100%{
+      width: 70;
+    }
+  }
+  
+
+.fa:hover{
+  opacity:0.7;
+
+}
+/*Contact*/
+
+.contact{
+  background: url("n_pic.jpg") no-repeat center;
+  padding: 25px 0;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  height: auto;
+  padding-top: 175px;
+  line-height: 11pt;
+    padding: 70px 0 70px 0;
+    position: initial;
+    display: block;
+    -webkit-font-smoothing: antialiased;
+
+}
+.Contact-Section h1{
+   
+  text-align: center;
+  color:aquamarine;
+
+}
+.border{
+  width: 50px;
+  height: 5px;
+  background: aquamarine;
+  margin: 40px auto;
+}
+
+.C-form{
+
+  max-width: 500px;
+  margin: auto;
+  padding: 0 15px;
+  overflow: hidden;
+}
+.C-form-text{
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  margin: 20px 0;
+  background: #111;
+  padding: 30px 50px;
+  outline: none;
+  color: yellow;
+  transition: 0.5s;
+}
+
+.C-form-text:focus{
+     
+  box-shadow: 0 0 15px 5px aquamarine;
+}
+
+textarea.C-form-text{
+  resize: none;
+  height: 150px;
+
+
+}
+
+.C-form-text-btn{
+  float: left;
+  border:0;
+  background:aquamarine ;
+  color: blue;
+  padding: 15px 60px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition:0.5s ;
+
+}
+.C-form-text-btn:hover{
+background: rgb(27, 112, 108)
+
+}
+.C-form-text a{
+  border: 1px solid aquamarine;
+  font-size: 15px;
+  text-transform: uppercase;
+  margin:20px;
+  text-decoration: none;
+  padding: 10px 25px;
+  display: inline;
+  color: aliceblue;
+}  
+.C-form-text a:hover{
+
+  background: rgb(27, 112, 108);
+  color: #333;
+}
+
+.placeholderRed{
+    color: orange;
+}
+
+/*accounts*/
+.flex.row{
+  flex-direction: row;
+}
+.flex {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  overflow :hidden;
+}
+ 
+footer{
+
+  padding: 50px 0 70px 0;
+  position: relative;
+  display: block;
+  color : white ;
+  font-size: large;
+}
+
+/* Vertically stick icons*/
+.icon-bar{
+  position:fixed;
+  top:50%;
+  -webkit-transform: translate(-50%);
+  -ms-transform:translateY(-50%);
+  transform: translateY(-50%);
+}
+.icon-bar a{
+  display:block;
+  text-align: center;
+  padding: 16px;
+  transition: 1ll 0.3s ease;
+  color: aquamarine;
+  font-size: 60px;
+}
+
+.icon-bar a:hover{
+  background-color: brown;
+
+}
+
+.fa-facebook{
+  background:blue;
+  color: black;
+ 
+  
+}
+.fa-instagram{
+  background: pink;
+  color: red;
+ 
+  
+}
+.fa-github{
+  background: green;
+  color: white;
+  
+}
+.fa-whatsapp{
+  background:gold;
+  color: black;
+  
+}
